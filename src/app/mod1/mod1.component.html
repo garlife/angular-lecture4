@@ -1,1 +1,19 @@
-<p>mod1 works!</p>
+<p>1 {{date|date}}</p>
+<p>2 {{date|date:"dd.MM.yyyy"}}</p>
+<p>3 {{date|date: "dd.MM"}}</p>
+<p>4 {{date|date: "yy.MM.dd hh:mm:ss"}}</p>
+<p>5 {{date|date: "HH:mm:ss ms"}}</p>
+<p>6 {{dateNow}}</p>
+<p>7 {{pi|number: "1.1-2"}}</p>
+<p>8 {{money|currency: "RUR":"code"}}</p>
+<p>9 {{money|currency: "USD":"symbol"}}</p>
+<p>10 {{money|currency: "GBP":"symbol-narrow"}}</p>
+<p>10 {{money|currency: "GBP":"Great Britain pounds"}}</p>
+<p>11 {{money|currency: "GBP":"symbol-narrow":"5.4-5"}}</p>
+<!-- пайпы можно конкатенировать -->
+<p>11 {{money|currency: "GBP":"great britain pounds":"5.4-5"|uppercase}}</p>
+<p>11 {{money|currency: "GBP":"great britain pounds":"5.4-5"|slice: 4 : 20}}</p>
+<hr>
+<p>12 {{getTextHello}}</p>
+
+

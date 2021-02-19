@@ -1,0 +1,15 @@
+<p style="background-color: yellow;">tempview works!</p>
+<p #userName class="myPar">{{name}}</p>
+<p>{{userName.textContent}}</p>
+<input type="text" [(ngModel)]="name">
+<p>
+<button type="button" (click)="counter.decrement(10)">-10</button>
+<button type="button" (click)="counter.decrement(1)">-</button>
+<app-temp1 #counter></app-temp1>
+<button type="button" (click)="counter.increment(1)">+</button>
+<button type="button" (click)="counter.increment(10)">+10</button>
+</p>
+<app-temp2>
+    <h2 #headerContent>{{header}}</h2>
+</app-temp2>
+
